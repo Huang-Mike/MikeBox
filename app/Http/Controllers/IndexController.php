@@ -8,6 +8,7 @@ class IndexController extends Controller
 {
     public function getfuck()
     {
-        return 'Yeeeeeeeeee';
+        return 'w';
     }
 }
+
