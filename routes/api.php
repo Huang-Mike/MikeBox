@@ -18,4 +18,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 
-Route::get('/anothermain','IndexController@getfuck');
+Route::get('/main','IndexController@getfuck');

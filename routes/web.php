@@ -15,4 +15,5 @@ Route::get('/', function () {       /*閉函式*/
     return view('welcome');
 });
 
-Route::get('/main','IndexController@getfuck');
+Route::get('/main/{aaa}/bbb/{ccc?}','IndexController@IdidIt');
+Route::get('/testJudgeTime','IndexController@JudgeTime')->middleware('judgeTimeMiddleWare');
