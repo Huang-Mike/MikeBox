@@ -17,3 +17,4 @@ Route::get('/', function () {       /*閉函式*/
 
 Route::get('/main/{aaa}/bbb/{ccc?}','IndexController@IdidIt');
 Route::get('/testJudgeTime','IndexController@JudgeTime')->middleware('judgeTimeMiddleWare');
+Route::get('/Decimal/{aaa}/{bbb}','IndexController@practice');
