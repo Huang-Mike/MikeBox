@@ -41,11 +41,7 @@ class IndexController extends Controller
     {
         print_r('Mike Test');
         echo '<br>';
-        if ($bbb < 2)
-        {
-            return '請輸入大於1的數值';
-        }else{
-            if (is_numeric($bbb))
+            if (is_numeric($bbb)&& $bbb>1)
             {
              echo '將數值 "' . $aaa . '" 轉換成 ' . $bbb . ' 進制';
              echo '<br>';    
@@ -63,8 +59,11 @@ class IndexController extends Controller
                 {
                     return '愛打符號????';
                 }
+                if ($bbb < 2)
+                {
+                    return '請輸入大於1的數值';
+                }        
             }
         }
-    }
 }
 
